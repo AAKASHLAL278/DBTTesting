@@ -1,0 +1,4 @@
+Region,Country,ItemType,SalesChannel,Amount
+UP,India,Cereal,Online,1000
+MP,India,Service,Offline,2000
+MP,India,Item,Offline,30000
