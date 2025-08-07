@@ -1,6 +1,7 @@
 WITH sales AS (
     SELECT
-          Region
+          SalesID
+        , Region
         , Country
         , ItemType
         , SalesChannel

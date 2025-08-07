@@ -1,6 +1,7 @@
 WITH sales AS (
     SELECT
-          Region
+          SalesID
+        , Region
         , Country
         , ItemType
         , SalesChannel
@@ -9,7 +10,7 @@ WITH sales AS (
         bronze.raw_sales
 )
 
-SELECT Region, initcap(Country) AS Country, ItemType, SalesChannel, Amount,
+SELECT SalesID, Region, initcap(Country) AS Country, ItemType, SalesChannel, Amount,
          CASE
               WHEN SalesChannel = 'Online' THEN 'E-commerce'
               ELSE 'Retail'
